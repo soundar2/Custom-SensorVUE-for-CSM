@@ -1,0 +1,83 @@
+﻿{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "title": "CsmTestResult",
+  "type": "object",
+  "properties": {
+    "Id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "TestDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "PartNumber": { "type": "string" },
+    "HeatNumber": { "type": "string" },
+    "OperatorName": { "type": "string" },
+    "BlankLengthLower": { "type": "number" },
+    "BlankLengthHigher": { "type": "number" },
+    "PeakLoad": { "type": "number" },
+    "TargetPeakLoad": { "type": "number" },
+    "DisplacementAtEnd": { "type": "number" },
+    "DisplacementAtPeak": { "type": "number" },
+    "OutsideDiameterAtStart": { "type": "number" },
+    "OutsideDiameterAtEnd": { "type": "number" },
+    "HeightAtEnd": { "type": "number" },
+    "Springback": { "type": "number" },
+    "TargetSpringback": { "type": "number" },
+    "TestDurationSec": { "type": "number" },
+    "TargetCurve": {
+      "$ref": "#/$defs/TargetCurve"
+    },
+    "RawReadings": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/Reading" }
+    }
+  },
+  "required": [
+    "Id",
+    "TestDate",
+    "PartNumber",
+    "HeatNumber",
+    "OperatorName",
+    "BlankLengthLower",
+    "BlankLengthHigher",
+    "PeakLoad",
+    "TargetPeakLoad",
+    "DisplacementAtEnd",
+    "DisplacementAtPeak",
+    "OutsideDiameterAtStart",
+    "OutsideDiameterAtEnd",
+    "HeightAtEnd",
+    "Springback",
+    "TargetSpringback",
+    "TestDurationSec",
+    "TargetCurve",
+    "RawReadings"
+  ],
+  "$defs": {
+    "Reading": {
+      "type": "object",
+      "properties": {
+        "Timestamp": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "Load": { "type": "number" },
+        "Displacement": { "type": "number" }
+      },
+      "required": [ "Timestamp", "Load", "Displacement" ]
+    },
+    "TargetCurve": {
+      "type": "object",
+      "properties": {
+        "PartName": { "type": "string" },
+        "Readings": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/Reading" }
+        }
+      },
+      "required": [ "PartName", "Readings" ]
+    }
+  }
+}

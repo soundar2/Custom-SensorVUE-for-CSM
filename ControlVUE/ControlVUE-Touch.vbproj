@@ -1,0 +1,963 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{63BC3F16-6CE6-47B0-A31E-4A9AC574B912}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>LoadVUE</RootNamespace>
+    <AssemblyName>SensorVUE</AssemblyName>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <OptionCompare>Text</OptionCompare>
+    <ApplicationIcon>code\Figures\loadstar icon-1 32x32 256 colors.ico</ApplicationIcon>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OptionInfer>On</OptionInfer>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>3.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DefineConstants>Mock=True</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <Optimize>false</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DefineConstants>
+    </DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ardalis.GuardClauses, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ardalis.GuardClauses.5.0.0\lib\netstandard2.0\Ardalis.GuardClauses.dll</HintPath>
+    </Reference>
+    <Reference Include="CsvHelper, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
+      <HintPath>..\packages\CsvHelper.2.16.3.0\lib\net45\CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Eval3, Version=1.1.4982.38952, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\externals\Eval3.dll</HintPath>
+    </Reference>
+    <Reference Include="Humanizer, Version=3.0.0.0, Culture=neutral, PublicKeyToken=979442b78dfc278e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Humanizer.Core.3.0.10\lib\net48\Humanizer.dll</HintPath>
+    </Reference>
+    <Reference Include="Json.More, Version=3.0.0.0, Culture=neutral, PublicKeyToken=17ed63f672b0e278, processorArchitecture=MSIL">
+      <HintPath>..\packages\Json.More.Net.3.0.1\lib\netstandard2.0\Json.More.dll</HintPath>
+    </Reference>
+    <Reference Include="JsonPointer.Net, Version=7.0.0.0, Culture=neutral, PublicKeyToken=17ed63f672b0e278, processorArchitecture=MSIL">
+      <HintPath>..\packages\JsonPointer.Net.7.0.1\lib\netstandard2.0\JsonPointer.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="JsonSchema.Net, Version=9.0.0.0, Culture=neutral, PublicKeyToken=17ed63f672b0e278, processorArchitecture=MSIL">
+      <HintPath>..\packages\JsonSchema.Net.9.2.0\lib\netstandard2.0\JsonSchema.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=10.0.0.7, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.10.0.7\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.HashCode.1.1.1\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Multimedia, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\externals\Multimedia.dll</HintPath>
+    </Reference>
+    <Reference Include="NCDComponent, Version=2.0.5457.20563, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\externals\NCDComponent.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QCChart2DNet, Version=2.0.0.3, Culture=neutral, PublicKeyToken=777bb05e591192d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\externals\QCChart2DNet.dll</HintPath>
+    </Reference>
+    <Reference Include="QCRTGraphNet, Version=2.0.0.3, Culture=neutral, PublicKeyToken=f1c64614e24a146b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\externals\QCRTGraphNet.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\externals\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.6.1\lib\net462\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=10.0.0.5, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.10.0.5\lib\net462\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Pipelines, Version=10.0.0.7, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.10.0.7\lib\net462\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.6.3\lib\net462\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.6.1\lib\net462\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Text.Encodings.Web, Version=10.0.0.7, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.10.0.7\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=10.0.0.5, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.10.0.5\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Dataflow, Version=10.0.0.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Dataflow.10.0.2\lib\net462\System.Threading.Tasks.Dataflow.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.6.3\lib\net462\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Presentation">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.XML" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="code\class\alarm\alarm.vb" />
+    <Compile Include="code\class\alarm\AlarmsCollection.vb" />
+    <Compile Include="code\class\alarm\ctlAlarm.Designer.vb">
+      <DependentUpon>ctlAlarm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\class\alarm\ctlAlarm.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="code\class\alarm\frmAlarmSettings.Designer.vb">
+      <DependentUpon>frmAlarmSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\class\alarm\frmAlarmSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\class\config\ConfigXml.vb" />
+    <Compile Include="code\class\email\frmEmailAddress.designer.vb">
+      <DependentUpon>frmEmailAddress.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\class\email\frmEmailAddress.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\class\filters\ctlFilter.designer.vb">
+      <DependentUpon>ctlFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\class\filters\ctlFilter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="code\class\filters\frmFilterSensorSettings.designer.vb">
+      <DependentUpon>frmFilterSensorSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\class\filters\frmFilterSensorSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\class\formula\Formula.vb" />
+    <Compile Include="code\class\general\modCalibrate.vb" />
+    <Compile Include="code\class\general\Units.vb" />
+    <Compile Include="code\class\general\WindowLayout.vb" />
+    <Compile Include="code\class\graph\GraphTheme.vb" />
+    <Compile Include="code\class\interface\IAlarmable.vb" />
+    <Compile Include="code\class\interface\IConnectionInfo.vb" />
+    <Compile Include="code\class\interface\IDerivedSensor.vb" />
+    <Compile Include="code\class\interface\IDeviceInterface.vb" />
+    <Compile Include="code\class\interface\IComDevice.vb" />
+    <Compile Include="code\class\interface\IFilterable.vb" />
+    <Compile Include="code\class\interface\ILoadVueForm.vb" />
+    <Compile Include="code\class\interface\IMainForm.vb" />
+    <Compile Include="code\class\interface\IPunchable.vb" />
+    <Compile Include="code\class\interface\IQcGraph.vb" />
+    <Compile Include="code\class\graph\GraphOptions.vb" />
+    <Compile Include="code\class\graph\GraphOptionsCollection.vb" />
+    <Compile Include="code\class\graph\XAxisOptions.vb" />
+    <Compile Include="code\class\graph\YAxisOptions.vb" />
+    <Compile Include="code\class\graph\YAxisSeries.vb" />
+    <Compile Include="code\class\interface\ISensorForm.vb" />
+    <Compile Include="code\class\general\ExpWMA.vb" />
+    <Compile Include="code\class\logging\frmLogOptions.Designer.vb">
+      <DependentUpon>frmLogOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\class\logging\frmLogOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\class\relays\ctlRelayCommand.designer.vb">
+      <DependentUpon>ctlRelayCommand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\class\relays\ctlRelayCommand.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="code\class\relays\ctlRelayControl.designer.vb">
+      <DependentUpon>ctlRelayControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\class\relays\ctlRelayControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="code\class\relays\ctRelayCommands.designer.vb">
+      <DependentUpon>ctRelayCommands.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\class\relays\ctRelayCommands.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="code\class\relays\frmRelay.Designer.vb">
+      <DependentUpon>frmRelay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\class\relays\frmRelay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\class\relays\RelayCommand.vb" />
+    <Compile Include="code\class\relays\RelaySetting.vb" />
+    <Compile Include="code\class\formula\FormulaSensor.vb" />
+    <Compile Include="code\class\formula\frmFormulaSensors.Designer.vb">
+      <DependentUpon>frmFormulaSensors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\class\formula\frmFormulaSensors.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\class\relays\frmRelaySettings.Designer.vb">
+      <DependentUpon>frmRelaySettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\class\relays\frmRelaySettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\class\relays\NcdRelayBox.vb" />
+    <Compile Include="code\class\relays\RelayChannel.vb" />
+    <Compile Include="code\class\relays\scripting\frmScriptErrors.Designer.vb">
+      <DependentUpon>frmScriptErrors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\class\relays\scripting\frmScriptErrors.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\class\filters\FilterSensor.vb" />
+    <Compile Include="code\class\sensors\FcmHs1KSensor.vb" />
+    <Compile Include="code\class\sensors\ILoadForceSensor.vb" />
+    <Compile Include="code\class\sensors\ILoadForceTempSensor.vb" />
+    <Compile Include="code\class\sensors\ILoadTempSensor.vb" />
+    <Compile Include="code\class\sensors\CapSensor.vb" />
+    <Compile Include="code\class\sensors\CoolMuscleMotor.vb" />
+    <Compile Include="code\class\sensors\DerivedSensor.vb" />
+    <Compile Include="code\class\interface\ISensor.vb" />
+    <Compile Include="code\class\sensors\LsDevice.vb" />
+    <Compile Include="code\class\general\utility.vb" />
+    <Compile Include="code\class\graph\clsClipboardMetafileHelper.vb" />
+    <Compile Include="code\class\general\clsGlobals.vb" />
+    <Compile Include="code\class\sensors\MitutoyoSPC.vb" />
+    <Compile Include="code\class\sensors\mocks\MockAttachedSensors.vb" />
+    <Compile Include="code\class\sensors\mocks\MockLsSensor.vb" />
+    <Compile Include="code\class\sensors\mocks\MockLsComSensor.vb" />
+    <Compile Include="code\class\sensors\mocks\MockFcmSensor.vb" />
+    <Compile Include="code\class\sensors\PunchCompletedSensor.vb" />
+    <Compile Include="code\class\sensors\PunchForceSensor.vb" />
+    <Compile Include="code\class\sensors\SensorCommand.vb" />
+    <Compile Include="code\cloud\CloudUpload.vb" />
+    <Compile Include="code\cloud\frmSetupCloudAccount.Designer.vb">
+      <DependentUpon>frmSetupCloudAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\cloud\frmSetupCloudAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\cloud\frmUploadToCloud.Designer.vb">
+      <DependentUpon>frmUploadToCloud.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\cloud\frmUploadToCloud.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\cloud\RTCloudUpload.vb" />
+    <Compile Include="code\cloud\Simple3Des.vb" />
+    <Compile Include="code\cloud\TestRTCloudUpload.vb" />
+    <Compile Include="code\csm_custom\frmPartDetails.Designer.vb">
+      <DependentUpon>frmPartDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\csm_custom\frmPartDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\csm_custom\ModCsmTest.vb" />
+    <Compile Include="code\csm_custom\CsmTestResult.vb" />
+    <Compile Include="code\forms\frmBurnCalibrationFromFile.Designer.vb">
+      <DependentUpon>frmBurnCalibrationFromFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\forms\frmBurnCalibrationFromFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\forms\frmIgnorePorts.designer.vb">
+      <DependentUpon>frmIgnorePorts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\forms\frmIgnorePorts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\forms\frmNoSensors.Designer.vb">
+      <DependentUpon>frmNoSensors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\forms\frmNoSensors.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\forms\frmSensorCtl.Designer.vb">
+      <DependentUpon>frmSensorCtl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\forms\frmSensorCtl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\forms\frmSplashImage.Designer.vb">
+      <DependentUpon>frmSplashImage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\forms\frmSplashImage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\forms\frmTareSensors.Designer.vb">
+      <DependentUpon>frmTareSensors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\forms\frmTareSensors.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\forms\frmWindowColors.designer.vb">
+      <DependentUpon>frmWindowColors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\forms\frmWindowColors.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\forms\lv12000\ctlScalingSensor.designer.vb">
+      <DependentUpon>ctlScalingSensor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\forms\lv12000\ctlScalingSensor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="code\forms\punchCounter\frmPunchCounterOptions.designer.vb">
+      <DependentUpon>frmPunchCounterOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\forms\punchCounter\frmPunchCounterOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\forms\frmSensorList.Designer.vb">
+      <DependentUpon>frmSensorList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\forms\frmSensorList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\forms\lv100\frmDetectLv100.designer.vb">
+      <DependentUpon>frmDetectLv100.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\forms\lv100\frmDetectLv100.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\forms\frmSensorParam.designer.vb">
+      <DependentUpon>frmSensorParam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\forms\frmSensorParam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\forms\frmDetectSensors.Designer.vb">
+      <DependentUpon>frmDetectSensors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\forms\frmDetectSensors.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\class\graph\frmGraphOptions.Designer.vb">
+      <DependentUpon>frmGraphOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\class\graph\frmGraphOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\forms\lv100\frmOptions.designer.vb">
+      <DependentUpon>frmOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\forms\lv100\frmOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\forms\punchCounter\frmPunchForce.designer.vb">
+      <DependentUpon>frmPunchForce.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\forms\punchCounter\frmPunchForce.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\forms\punchCounter\modEmbeddedFonts.vb" />
+    <Compile Include="code\class\graph\frmQcGraph.Designer.vb">
+      <DependentUpon>frmQcGraph.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\class\graph\frmQcGraph.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\class\logging\frmSensorsToLog.Designer.vb">
+      <DependentUpon>frmSensorsToLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\class\logging\frmSensorsToLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\class\graph\ctlQcLinearXGraph.Designer.vb">
+      <DependentUpon>ctlQcLinearXGraph.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\class\graph\ctlQcLinearXGraph.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="code\class\graph\ctlQcTimeXGraph.Designer.vb">
+      <DependentUpon>ctlQcTimeXGraph.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\class\graph\ctlQcTimeXGraph.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="code\class\email\clsSendEmail.vb" />
+    <Compile Include="code\class\logging\frmLog.Designer.vb">
+      <DependentUpon>frmLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\class\logging\frmLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\main\frmMainV2.designer.vb">
+      <DependentUpon>frmMainV2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\main\frmMainV2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\onetomany\FcmXbeeSensor.vb" />
+    <Compile Include="code\onetomany\XbeeApiDongle.vb" />
+    <Compile Include="code\onetomany\XbeeApiSensor.vb" />
+    <Compile Include="code\onetomany\XBeeChecksum.vb" />
+    <Compile Include="code\class\relays\scripting\RelayScripting.vb" />
+    <Compile Include="code\usercontrols\ctlPeakLow.Designer.vb">
+      <DependentUpon>ctlPeakLow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\usercontrols\ctlPeakLow.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="code\usercontrols\ctlSensor.designer.vb">
+      <DependentUpon>ctlSensor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\usercontrols\ctlSensor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="code\forms\frmAbout.Designer.vb">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\forms\frmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\class\config\IniFiles.vb" />
+    <Compile Include="code\main\controlvue-touch-main.vb" />
+    <Compile Include="code\class\sensors\AttachedSensors.vb" />
+    <Compile Include="code\class\sensors\FcmSensor.vb" />
+    <Compile Include="code\class\sensors\LsComSensor.vb" />
+    <Compile Include="code\class\sensors\LsSensor.vb" />
+    <Compile Include="code\usercontrols\DecimalPlacesControl.Designer.vb">
+      <DependentUpon>DecimalPlacesControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\usercontrols\DecimalPlacesControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="code\usercontrols\FontScalingButton.designer.vb">
+      <DependentUpon>FontScalingButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\usercontrols\FontScalingButton.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="code\usercontrols\FontScalingLabel.designer.vb">
+      <DependentUpon>FontScalingLabel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\usercontrols\FontScalingLabel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="code\usercontrols\FontScalingTextBox.designer.vb">
+      <DependentUpon>FontScalingTextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\usercontrols\FontScalingTextBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="code\usercontrols\SelectUnitsControl.Designer.vb">
+      <DependentUpon>SelectUnitsControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="code\usercontrols\SelectUnitsControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="code\class\alarm\ctlAlarm.resx">
+      <DependentUpon>ctlAlarm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\class\alarm\frmAlarmSettings.resx">
+      <DependentUpon>frmAlarmSettings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\class\email\frmEmailAddress.resx">
+      <DependentUpon>frmEmailAddress.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\class\filters\ctlFilter.resx">
+      <DependentUpon>ctlFilter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\class\filters\frmFilterSensorSettings.resx">
+      <DependentUpon>frmFilterSensorSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\class\logging\frmLogOptions.resx">
+      <DependentUpon>frmLogOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\class\relays\ctlRelayCommand.resx">
+      <DependentUpon>ctlRelayCommand.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\class\relays\ctlRelayControl.resx">
+      <DependentUpon>ctlRelayControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\class\formula\frmFormulaSensors.resx">
+      <DependentUpon>frmFormulaSensors.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\class\relays\ctRelayCommands.resx">
+      <DependentUpon>ctRelayCommands.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\class\relays\frmRelay.resx">
+      <DependentUpon>frmRelay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\class\relays\frmRelaySettings.resx">
+      <DependentUpon>frmRelaySettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\class\relays\scripting\frmScriptErrors.resx">
+      <DependentUpon>frmScriptErrors.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\cloud\frmSetupCloudAccount.resx">
+      <DependentUpon>frmSetupCloudAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\cloud\frmUploadToCloud.resx">
+      <DependentUpon>frmUploadToCloud.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\csm_custom\frmPartDetails.resx">
+      <DependentUpon>frmPartDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\forms\frmBurnCalibrationFromFile.resx">
+      <DependentUpon>frmBurnCalibrationFromFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\forms\frmIgnorePorts.resx">
+      <DependentUpon>frmIgnorePorts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\forms\frmNoSensors.resx">
+      <DependentUpon>frmNoSensors.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\forms\frmSensorCtl.resx">
+      <DependentUpon>frmSensorCtl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\forms\frmSplashImage.resx">
+      <DependentUpon>frmSplashImage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\forms\frmTareSensors.resx">
+      <DependentUpon>frmTareSensors.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\forms\frmWindowColors.resx">
+      <DependentUpon>frmWindowColors.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\forms\lv12000\ctlScalingSensor.resx">
+      <DependentUpon>ctlScalingSensor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\forms\punchCounter\frmPunchCounterOptions.resx">
+      <DependentUpon>frmPunchCounterOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\forms\frmSensorList.resx">
+      <DependentUpon>frmSensorList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\forms\lv100\frmDetectLv100.resx">
+      <DependentUpon>frmDetectLv100.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\forms\frmSensorParam.resx">
+      <DependentUpon>frmSensorParam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\forms\frmDetectSensors.resx">
+      <DependentUpon>frmDetectSensors.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\class\graph\frmGraphOptions.resx">
+      <DependentUpon>frmGraphOptions.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\forms\lv100\frmOptions.resx">
+      <DependentUpon>frmOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\class\graph\frmQcGraph.resx">
+      <DependentUpon>frmQcGraph.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\class\logging\frmSensorsToLog.resx">
+      <DependentUpon>frmSensorsToLog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\class\graph\ctlQcLinearXGraph.resx">
+      <DependentUpon>ctlQcLinearXGraph.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\class\graph\ctlQcTimeXGraph.resx">
+      <DependentUpon>ctlQcTimeXGraph.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\forms\frmAbout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\class\logging\frmLog.resx">
+      <DependentUpon>frmLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\forms\punchCounter\frmPunchForce.resx">
+      <DependentUpon>frmPunchForce.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\main\frmMainV2.resx">
+      <DependentUpon>frmMainV2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\usercontrols\ctlPeakLow.resx">
+      <DependentUpon>ctlPeakLow.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\usercontrols\ctlSensor.resx">
+      <DependentUpon>ctlSensor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\usercontrols\DecimalPlacesControl.resx">
+      <DependentUpon>DecimalPlacesControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\usercontrols\FontScalingButton.resx">
+      <DependentUpon>FontScalingButton.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\usercontrols\FontScalingLabel.resx">
+      <DependentUpon>FontScalingLabel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\usercontrols\FontScalingTextBox.resx">
+      <DependentUpon>FontScalingTextBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="code\usercontrols\SelectUnitsControl.resx">
+      <DependentUpon>SelectUnitsControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\csm_custom\CsmTestResultSchema.json" />
+    <None Include="data\csm_custom\part001-target.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\csm_custom\target-curves.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="code\Figures\collapse-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="code\Figures\expand-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="code\Figures\metal_tiling 64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="license\licagreement.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="teamviewer\TeamViewerQS_Loadstar.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="code\Figures\retry-2.png" />
+    <None Include="code\Figures\frontend\loadvue_frontend.png" />
+    <None Include="changes.txt" />
+    <Content Include="data\deviceSettings.xml" />
+    <None Include="data\defaultwindowlayout.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="guids.txt" />
+    <None Include="Resources\start_round.wav" />
+    <None Include="Resources\boxing_bell.wav" />
+    <None Include="packages.config" />
+    <None Include="Resources\digiface regular.ttf" />
+    <None Include="Resources\waves-2.jpg" />
+    <None Include="Resources\lv100-background.jpg" />
+    <None Include="code\Figures\burn sensor.png" />
+    <None Include="code\Figures\burn.png" />
+    <None Include="code\Figures\fire 16x16.png" />
+    <None Include="code\Figures\connect.png" />
+    <None Include="code\Figures\animated  progress indicator - 2.gif" />
+    <None Include="code\Figures\animated  progress indicator - 3.gif" />
+    <None Include="code\Figures\email-16x16.png" />
+    <None Include="code\Figures\cell phone 16x16.png" />
+    <None Include="code\Figures\email off-16x16.png" />
+    <None Include="code\Figures\background-strip.png" />
+    <None Include="code\Figures\email_2.png" />
+    <None Include="code\Figures\email_off.png" />
+    <None Include="code\Figures\email_on.png" />
+    <None Include="code\Figures\increase-decimals-2.png" />
+    <None Include="code\Figures\decrease-decimals-2.png" />
+    <None Include="code\Figures\delete_minus.png" />
+    <None Include="code\Figures\controlvue_mdi_background.png" />
+    <None Include="code\Figures\formulasensor\formula_ok.png" />
+    <None Include="code\Figures\formulasensor\formula_error.png" />
+    <None Include="code\Figures\relay\relay_reset.png" />
+    <None Include="code\Figures\relay\relay_tripped.png" />
+    <None Include="code\Figures\graphs\graph_disabled.png" />
+    <None Include="code\Figures\frontend\sensorvue_frontend.png" />
+    <None Include="code\Figures\frontend\controlvue_frontend.png" />
+    <None Include="code\Figures\wifi\wifilogo.png" />
+    <Content Include="code\Figures\lv100-background.jpg" />
+    <Content Include="data\alarms\default.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="code\Figures\loadstar icon-1 32x32 256 colors.ico" />
+    <None Include="code\Figures\loadstar_logo_mdi_background-2.png" />
+    <Content Include="code\Figures\logging_in_progress.gif" />
+    <None Include="code\Figures\rainbow-colors-palette.png" />
+    <None Include="code\Figures\palette-3.png" />
+    <None Include="code\Figures\popout.gif" />
+    <None Include="code\Figures\recycle.png" />
+    <None Include="code\Figures\new_plus.png" />
+    <Content Include="code\Figures\reset.png" />
+    <None Include="code\Figures\toolbar\tare_32x32.png" />
+    <None Include="code\Figures\toolbar\tare_20.png" />
+    <None Include="code\Figures\toolbar\stop.png" />
+    <None Include="code\Figures\sensorvue_mdi_background.png" />
+    <None Include="Resources\SensorVUEsoftware.png" />
+    <None Include="Resources\newgq1.wav" />
+    <None Include="Resources\glow2.png" />
+    <None Include="Resources\ruler1.png" />
+    <None Include="Resources\computer1.png" />
+    <None Include="Resources\computer.png" />
+    <None Include="Resources\computer_with_sensorvue.png" />
+    <None Include="Resources\relays_2.png" />
+    <None Include="Resources\rotary_actuator.png" />
+    <None Include="Resources\ruler.png" />
+    <None Include="Resources\torque_arrow_2.png" />
+    <None Include="Resources\force_arrow.png" />
+    <None Include="Resources\b-al-background.JPG" />
+    <None Include="Resources\perforated-metal-background.jpg" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\ok.png" />
+    <None Include="code\Figures\sms-off.png" />
+    <None Include="code\Figures\sms-on.png" />
+    <None Include="code\Figures\wrench-settings2.png" />
+    <None Include="Resources\relay tripped state.png" />
+    <None Include="Resources\relay initial or reset state.png" />
+    <None Include="Resources\tare 16x16.png" />
+    <None Include="Resources\stop 16x16.png" />
+    <None Include="Resources\start 16x16.png" />
+    <None Include="Resources\copy to clipboard.png" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\wave-background1.png" />
+    <None Include="Resources\wave-background.png" />
+    <None Include="Resources\Windows XP Print complete.wav" />
+    <None Include="Resources\windows xp critical Stop.wav" />
+    <None Include="code\Figures\sms off 16x16.png" />
+    <None Include="data\sms-carriers.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\16x16-red.png" />
+    <None Include="Resources\50x50-red.png" />
+    <None Include="Resources\16x16-green.png" />
+    <None Include="Resources\50x50-green.png" />
+    <None Include="Resources\16x16-gray.png" />
+    <None Include="Resources\50x50-gray.png" />
+    <None Include="QCLicense.lic.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\com.loadstar.disclaimer\com.loadstar.disclaimer.vbproj">
+      <Project>{914ee432-5ed1-40a4-91e7-c88dd3a3c969}</Project>
+      <Name>com.loadstar.disclaimer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.loadstar.universal\com.loadstar.universal.vbproj">
+      <Project>{a2daae09-6491-42a1-9cf4-b70f63e5f001}</Project>
+      <Name>com.loadstar.universal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.loadstar.utility\com.loadstar.utility.vbproj">
+      <Project>{841ae90a-2d46-4b14-8766-ad7ba5c5b231}</Project>
+      <Name>com.loadstar.utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ImportLogFiles\ImportLogFiles.vbproj">
+      <Project>{f6140c75-92be-487e-b85c-95dc70dcb1ce}</Project>
+      <Name>ImportLogFiles</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LvNumericTextBox\LvNumericTextBox.vbproj">
+      <Project>{dcb7d8e6-5742-4214-b1c5-0db26ffa1c18}</Project>
+      <Name>LvNumericTextBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RelayInterface\RelayInterface.vbproj">
+      <Project>{a2077bd4-2ec8-462b-ac4d-457024061b36}</Project>
+      <Name>RelayInterface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="code\class\torque\" />
+    <Folder Include="code\debug\" />
+    <Folder Include="externals\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="..\packages\System.ValueTuple.4.6.2\build\net471\System.ValueTuple.targets" Condition="Exists('..\packages\System.ValueTuple.4.6.2\build\net471\System.ValueTuple.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.ValueTuple.4.6.2\build\net471\System.ValueTuple.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.ValueTuple.4.6.2\build\net471\System.ValueTuple.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

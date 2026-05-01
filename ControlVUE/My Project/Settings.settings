@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="iLoadVidPid" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">VID_04D8&amp;PID_FE7D</Value>
+    </Setting>
+    <Setting Name="ftdiVidPid" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">FTDIBUS\VID_0403+PID_600</Value>
+    </Setting>
+    <Setting Name="ds2500VidPid" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">VID_04D8&amp;PID_FE7D</Value>
+    </Setting>
+    <Setting Name="graphColor" Type="System.String" Scope="Application">
+      <Value Profile="(Default)"> Blue, DarkGreen, Chocolate, Gold,Black, Red, Red, Crimson, DarkMagenta, Teal, GoldenRod</Value>
+    </Setting>
+    <Setting Name="ftdiVidPid2" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">FTDIBUS\VID_0403+PID_6014</Value>
+    </Setting>
+    <Setting Name="keyspanDevId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">KEYSPAN\*USA19HMAP</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

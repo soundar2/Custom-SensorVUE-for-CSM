@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<deviceSettingsXml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Devices>
+    <Device type="di100">
+      <settings>
+        <setting name="id" index="0" value="" waitForResponseMSec="0" />
+        <setting name="units" index="1" value="" waitForResponseMSec="0" />
+        <setting name="lc" index="2" value="" waitForResponseMSec="0" />
+        <setting name="ncal" index="3" value="" waitForResponseMSec="0" />
+        <setting name="cca" index="4" value="" waitForResponseMSec="0" />
+        <setting name="ccb" index="5" value="" waitForResponseMSec="0" />
+        <setting name="ccc" index="6" value="" waitForResponseMSec="0" />
+        <setting name="ccd" index="7" value="" waitForResponseMSec="0" />
+        <setting name="tca" index="4" value="" waitForResponseMSec="0" />
+        <setting name="tcb" index="5" value="" waitForResponseMSec="0" />
+        <setting name="tcc" index="6" value="" waitForResponseMSec="0" />
+        <setting name="tcd" index="7" value="" waitForResponseMSec="0" />
+        <setting name="cla" index="8" value="" waitForResponseMSec="0" />
+        <setting name="css" index="9" value="" waitForResponseMSec="0" />
+        <setting name="csf" index="10" value="" waitForResponseMSec="0" />
+        <setting name="mvolt" index="11" value="" waitForResponseMSec="0" />
+      </settings>
+    </Device>
+    <Device type="di1000">
+      <settings>
+        <setting name="id" index="0" value="" waitForResponseMSec="0" />
+        <setting name="units" index="1" value="" waitForResponseMSec="0" />
+        <setting name="lc" index="2" value="" waitForResponseMSec="0" />
+        <setting name="ncal" index="3" value="" waitForResponseMSec="0" />
+        <setting name="cca" index="4" value="" waitForResponseMSec="0" />
+        <setting name="ccb" index="5" value="" waitForResponseMSec="0" />
+        <setting name="ccc" index="6" value="" waitForResponseMSec="0" />
+        <setting name="ccd" index="7" value="" waitForResponseMSec="0" />
+        <setting name="tca" index="4" value="" waitForResponseMSec="0" />
+        <setting name="tcb" index="5" value="" waitForResponseMSec="0" />
+        <setting name="tcc" index="6" value="" waitForResponseMSec="0" />
+        <setting name="tcd" index="7" value="" waitForResponseMSec="0" />
+        <setting name="cla" index="8" value="" waitForResponseMSec="0" />
+        <setting name="css" index="9" value="" waitForResponseMSec="0" />
+        <setting name="csf" index="10" value="" waitForResponseMSec="0" />
+        <setting name="mvolt" index="11" value="" waitForResponseMSec="0" />
+        <setting name="gain" index="12" value="" waitForResponseMSec="1000" />
+        <setting name="sps" index="13" value="" waitForResponseMSec="1000" />
+      </settings>
+    </Device>
+  </Devices>
+</deviceSettingsXml>

@@ -1,0 +1,50 @@
+﻿LV-100-> 60B4BD78-5EB1-4FD8-9A5C-B1B47EE867B9
+
+---------------------------------
+LV-1000-> CD6F82F2-6E86-4ACD-9E19-9063068B0F8F
+installer product code {DF0692AC-FAAC-4016-B06E-B7C36A152055}
+installer upgrade code {87F97D19-BAE6-4F23-85FD-067A4B6EEA5A}
+installer sofware unique id 3A6DAEDB-D433-405C-873B-C0F701897835
+---------------------
+LV-1000HS-> C095F025-766A-48EA-94AE-DACDEBDBBD27
+installer product code {C095F025-766A-48EA-94AE-DACDEBDBBD27}
+installer upgrade code {3CC89886-0275-4AD4-8B71-FDF120C682D4}
+installer sofware unique id C095F025-766A-48EA-94AE-DACDEBDBBD27
+
+
+-------------------------------
+LV-4000-> 86BEE3D4-3886-46DE-B0EB-FF320C8C0493
+installer product code {DF2A4FAD-3F64-4D15-9D31-AF528D1A1417}
+installer upgrade code {E1A465F8-05D7-4284-9307-1A260D20B749}
+installer sofware unique id 86BEE3D4-3886-46DE-B0EB-FF320C8C0493
+-------------------------------------
+LV-4000HS-> 9E07E103-811B-4BBC-BCED-B6E82E4404D9
+installer product code {9E07E103-811B-4BBC-BCED-B6E82E4404D9}
+installer upgrade code {7B3C59D9-629C-43AA-83F6-250F5285C989}
+installer sofware unique 9E07E103-811B-4BBC-BCED-B6E82E4404D9
+-------------------------------------------
+LV-12000->9E8041F3-A09E-41A5-BA7A-6A60728464B0
+LV-12000HS->66FE2BA3-7940-4311-9732-DDE44107C1AB
+SensorVUE->47C77958-560D-4EB8-9BF0-F8C90C329166
+-------------------------------------------
+--> note last number is different from sensorvue
+SensorVUE-Touch->47C77958-560D-4EB8-9BF0-F8C90C329167
+installer product code {833BD9EA-C9D3-4CE6-AA26-F9425FD6C04C} / or {98A7554A-D1D5-4D2A-918E-F700BFE5E8DC}
+installer upgrade code {0F8C33C0-9862-445F-A3BD-A469E8EEE3B4}
+-------------------------------------------
+ControlVUE->0CADB62B-99B1-466F-8F51-C1019CFD7640
+installer product code 
+installer upgrade code 
+
+
+
+-------------------------------------------
+
+
+LV-1000HS-10K->ef9ee608-724f-4c6f-85f3-dae13f13f73b
+LoadVUE LV-400->CE668707-3178-4C71-B13A-B48E3DE7D594
+
+-------------------------------------------
+LoadVUE-for-Boxer-Training-> CD3A1504-3AE1-4C8A-ABDB-30B5152520C8
+installer product code 1E14667B-A8B8-4B64-99CD-FAE2CD53AABF
+installer upgrade code 653B1073-4CC0-4725-9788-A3EB056D3A33

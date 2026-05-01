@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.1 "
+   inkscape:export-filename="C:\Documents and Settings\Soundar\My Documents\Visual Studio 2008\Projects\ControlVUE\trunk\code\Figures\graphs\graph_disabled.png"
+   inkscape:export-xdpi="560.72998"
+   inkscape:export-ydpi="560.72998"
+   sodipodi:docname="New document 1">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="10.492018"
+     inkscape:cx="118.80844"
+     inkscape:cy="574.58261"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="744"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:15.87115863000000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:none;stroke:#666666;font-family:Rockwell;-inkscape-font-specification:Rockwell;stroke-width:0.40000000000000002;stroke-miterlimit:4;stroke-dasharray:none;opacity:0.25"
+       x="-265.78873"
+       y="430.31509"
+       id="text2985"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.7583256,-0.65187597,0.65187597,0.7583256,0,0)"
+       inkscape:export-xdpi="566.02002"
+       inkscape:export-ydpi="566.02002"><tspan
+         sodipodi:role="line"
+         id="tspan2987"
+         x="-265.78873"
+         y="430.31509">DISABLED</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+﻿
+
+
+2018-3-1
+Set Graph Max Points to 1,000,000
+DI-1000 firmware issue where it is losing settings. Changed message to reflect which COM port has the issue.
+Window layout bugs - not fixed yet.
+Teamviewer not installed with installation
+

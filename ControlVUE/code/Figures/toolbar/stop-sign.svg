@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg14350"
+   sodipodi:docname="stop-sign.svg"
+   viewBox="0 0 134.72 134.62"
+   sodipodi:version="0.32"
+   version="1.0"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:version="0.91 r13725">
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     id="base"
+     bordercolor="#666666"
+     inkscape:pageshadow="2"
+     inkscape:window-y="-8"
+     pagecolor="#ffffff"
+     inkscape:window-height="705"
+     inkscape:zoom="2.9559913"
+     inkscape:window-x="-8"
+     borderopacity="1.0"
+     inkscape:current-layer="layer1"
+     inkscape:cx="98.615308"
+     inkscape:cy="60.622095"
+     inkscape:window-width="1366"
+     inkscape:pageopacity="0.0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:window-maximized="1" />
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     transform="translate(-3048.4 2585.9)">
+    <path
+       id="path8614"
+       style="fill-rule:evenodd;fill:#ff0000"
+       d="m3083.8-2585.9l-35.4 35.4v63.9l35.3 35.3h63.1l36.3-36.3v-63.2l-35-35-64.3-0.1zm2.1 4.3l60.1 0.2 32.8 32.7v59.1l-34 34h-59.1l-33-33.1v-59.7l33.2-33.2z" />
+    <path
+       id="path6674"
+       style="fill-rule:evenodd;fill:#ff0000"
+       d="m3088-2577l-30.7 30.7v55.4l30.6 30.7h54.8l31.5-31.5v-54.8l-30.4-30.4-55.8-0.1z" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:44.67300415px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       x="3074.1204"
+       y="-2528.1624"
+       id="text4138"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4140"
+         x="3074.1204"
+         y="-2528.1624">ALL</tspan><tspan
+         sodipodi:role="line"
+         x="3074.1204"
+         y="-2472.321"
+         id="tspan4142">OFF</tspan></text>
+  </g>
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>stop sign</dc:title>
+        <dc:date>2007-10-20T00:26:43</dc:date>
+        <dc:description />
+        <dc:source>https://openclipart.org/detail/7263/stop-sign-by-leomarc</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Leomarc</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>roadsign</rdf:li>
+            <rdf:li>sign</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

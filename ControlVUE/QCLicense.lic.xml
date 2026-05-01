@@ -1,0 +1,145 @@
+<?xml version="1.0" standalone="yes"?>
+<QCLicenseDataSet>
+  <xs:schema id="QCLicenseDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="QCLicenseDataSet" msdata:IsDataSet="true" msdata:Locale="en">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="LicenseLongTable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Long" type="xs:long" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="LicenseStringTable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="String" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <LicenseLongTable>
+    <Long>3125178480249750</Long>
+  </LicenseLongTable>
+  <LicenseLongTable>
+    <Long>3125178480249756</Long>
+  </LicenseLongTable>
+  <LicenseLongTable>
+    <Long>16</Long>
+  </LicenseLongTable>
+  <LicenseLongTable>
+    <Long>3</Long>
+  </LicenseLongTable>
+  <LicenseLongTable>
+    <Long>3</Long>
+  </LicenseLongTable>
+  <LicenseLongTable>
+    <Long>189205319</Long>
+  </LicenseLongTable>
+  <LicenseLongTable>
+    <Long>5933503585729306</Long>
+  </LicenseLongTable>
+  <LicenseLongTable>
+    <Long>1279685716112661</Long>
+  </LicenseLongTable>
+  <LicenseLongTable>
+    <Long>1127878127286116</Long>
+  </LicenseLongTable>
+  <LicenseLongTable>
+    <Long>668136410850709</Long>
+  </LicenseLongTable>
+  <LicenseLongTable>
+    <Long>2388764140941823</Long>
+  </LicenseLongTable>
+  <LicenseLongTable>
+    <Long>5387355059877347</Long>
+  </LicenseLongTable>
+  <LicenseLongTable>
+    <Long>2440</Long>
+  </LicenseLongTable>
+  <LicenseLongTable>
+    <Long>73</Long>
+  </LicenseLongTable>
+  <LicenseLongTable>
+    <Long>1280</Long>
+  </LicenseLongTable>
+  <LicenseLongTable>
+    <Long>1315290963809046</Long>
+  </LicenseLongTable>
+  <LicenseLongTable>
+    <Long>6075019116185483</Long>
+  </LicenseLongTable>
+  <LicenseStringTable>
+    <String>QCRTGraph Real-Time Graphics Tools for .Net Developer Unlimited Subscription</String>
+  </LicenseStringTable>
+  <LicenseStringTable>
+    <String />
+  </LicenseStringTable>
+  <LicenseStringTable>
+    <String />
+  </LicenseStringTable>
+  <LicenseStringTable>
+    <String />
+  </LicenseStringTable>
+  <LicenseStringTable>
+    <String />
+  </LicenseStringTable>
+  <LicenseStringTable>
+    <String>Soundar Rajan</String>
+  </LicenseStringTable>
+  <LicenseStringTable>
+    <String>Loadstar Sensors</String>
+  </LicenseStringTable>
+  <LicenseStringTable>
+    <String>95ec8bdb-82bd-4413-96c0-51b26250ea1d</String>
+  </LicenseStringTable>
+  <LicenseStringTable>
+    <String>Soundar Rajan</String>
+  </LicenseStringTable>
+  <LicenseStringTable>
+    <String>Loadstar Sensors</String>
+  </LicenseStringTable>
+  <LicenseStringTable>
+    <String>453 Ravendale Dr</String>
+  </LicenseStringTable>
+  <LicenseStringTable>
+    <String>Suite F</String>
+  </LicenseStringTable>
+  <LicenseStringTable>
+    <String>Mountain View</String>
+  </LicenseStringTable>
+  <LicenseStringTable>
+    <String>CA</String>
+  </LicenseStringTable>
+  <LicenseStringTable>
+    <String>94043</String>
+  </LicenseStringTable>
+  <LicenseStringTable>
+    <String>USA</String>
+  </LicenseStringTable>
+  <LicenseStringTable>
+    <String>soundar@loadstarsensors.com</String>
+  </LicenseStringTable>
+  <LicenseStringTable>
+    <String>650-938-4282</String>
+  </LicenseStringTable>
+  <LicenseStringTable>
+    <String />
+  </LicenseStringTable>
+  <LicenseStringTable>
+    <String>Friday, February 01, 2008</String>
+  </LicenseStringTable>
+  <LicenseStringTable>
+    <String>Wednesday, February 01, 2108</String>
+  </LicenseStringTable>
+  <LicenseStringTable>
+    <String>3125178480373214</String>
+  </LicenseStringTable>
+  <LicenseStringTable>
+    <String>Quinn-Curtis, Inc.</String>
+  </LicenseStringTable>
+</QCLicenseDataSet>

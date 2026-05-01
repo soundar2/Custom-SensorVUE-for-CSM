@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.1 "
+   sodipodi:docname="x_axis.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mend"
+       style="overflow:visible;">
+      <path
+         id="path4053"
+         style="font-size:12.0;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) rotate(180) translate(0,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lend"
+       style="overflow:visible;">
+      <path
+         id="path4047"
+         style="font-size:12.0;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path4029"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.50077816"
+     inkscape:cx="133.41862"
+     inkscape:cy="526.18109"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="744"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g5170"
+       inkscape:export-xdpi="67.781616"
+       inkscape:export-ydpi="67.781616"
+       inkscape:export-filename="C:\Documents and Settings\Soundar\My Documents\Visual Studio 2008\Projects\ControlVUE\trunk\code\Figures\graphs\general.png">
+      <text
+         sodipodi:linespacing="125%"
+         id="text5023"
+         y="349.70514"
+         x="340.71219"
+         style="font-size:64.48085785px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Comic Sans MS;-inkscape-font-specification:Comic Sans MS"
+         xml:space="preserve"><tspan
+           y="349.70514"
+           x="340.71219"
+           id="tspan5025"
+           sodipodi:role="line">Title</tspan></text>
+      <g
+         transform="matrix(0.70896411,0,0,0.70896411,175.51728,110.71698)"
+         id="g5081">
+        <g
+           id="g3825"
+           transform="translate(-75.881904,405.36911)"
+           inkscape:export-filename="C:\Documents and Settings\Soundar\My Documents\Visual Studio 2008\Projects\ControlVUE\trunk\code\Figures\graphs\y1_axis2.png"
+           inkscape:export-xdpi="81.738464"
+           inkscape:export-ydpi="81.738464">
+          <g
+             transform="matrix(1,0,0,0.91073581,0,0.22316049)"
+             id="g3815">
+            <path
+               style="fill:#00ffff;stroke:#00ffff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+               d="m 143.77624,2.5 c 0,355.44681 0,355.44681 0,355.44681"
+               id="path2987"
+               inkscape:connector-curvature="0" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3757"
+               d="m 224.79302,2.5 c 0,355.44681 0,355.44681 0,355.44681"
+               style="fill:#00ffff;stroke:#00ffff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+            <path
+               style="fill:#00ffff;stroke:#00ffff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+               d="m 305.80979,2.5 c 0,355.44681 0,355.44681 0,355.44681"
+               id="path3759"
+               inkscape:connector-curvature="0" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3761"
+               d="m 386.82655,2.5 c 0,355.44681 0,355.44681 0,355.44681"
+               style="fill:#00ffff;stroke:#00ffff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3763"
+               d="m 467.84334,2.5 c 0,355.44681 0,355.44681 0,355.44681"
+               style="fill:#00ffff;stroke:#00ffff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+            <path
+               style="fill:#00ffff;stroke:#00ffff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+               d="m 548.86009,2.5 c 0,355.44681 0,355.44681 0,355.44681"
+               id="path3765"
+               inkscape:connector-curvature="0" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3767"
+               d="m 629.87689,2.5 c 0,355.44681 0,355.44681 0,355.44681"
+               style="fill:#00ffff;stroke:#00ffff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+            <path
+               style="fill:#00ffff;stroke:#00ffff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+               d="m 710.89365,2.5 c 0,355.44681 0,355.44681 0,355.44681"
+               id="path3769"
+               inkscape:connector-curvature="0" />
+          </g>
+          <path
+             style="fill:#00ffff;stroke:#00ffff;stroke-width:6.28324413;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+             d="m 705.08586,2.49999 c -561.30961,0 -561.30961,0 -561.30961,0"
+             id="path3783"
+             inkscape:connector-curvature="0" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path3785"
+             d="m 705.08586,83.51677 c -561.30961,0 -561.30961,0 -561.30961,0"
+             style="fill:#00ffff;stroke:#00ffff;stroke-width:6.28324413;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+          <path
+             style="fill:#00ffff;stroke:#00ffff;stroke-width:6.28324413;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+             d="m 705.08586,164.53354 c -561.30961,0 -561.30961,0 -561.30961,0"
+             id="path3787"
+             inkscape:connector-curvature="0" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path3789"
+             d="m 705.08586,245.5503 c -561.30961,0 -561.30961,0 -561.30961,0"
+             style="fill:#00ffff;stroke:#00ffff;stroke-width:6.28324413;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path3791"
+             d="m 705.08586,326.56709 c -561.30961,0 -561.30961,0 -561.30961,0"
+             style="fill:#00ffff;stroke:#00ffff;stroke-width:6.28324413;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+        </g>
+      </g>
+      <path
+         inkscape:export-ydpi="81.738464"
+         inkscape:export-xdpi="81.738464"
+         inkscape:export-filename="C:\Documents and Settings\Soundar\My Documents\Visual Studio 2008\Projects\ControlVUE\trunk\code\Figures\graphs\y1_axis2.png"
+         inkscape:connector-curvature="0"
+         id="path3841"
+         d="m 262.94001,629.40242 239.30767,0"
+         style="fill:none;stroke:#000000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow2Mend)" />
+      <text
+         xml:space="preserve"
+         style="font-size:86.30859375px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Comic Sans MS;-inkscape-font-specification:Comic Sans MS"
+         x="629.35083"
+         y="534.73444"
+         id="text5075"
+         sodipodi:linespacing="125%"
+         transform="scale(1.016944,0.98333831)"><tspan
+           y="534.73444"
+           x="629.35083"
+           id="tspan5156"
+           sodipodi:role="line">y</tspan></text>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:7.97487545;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow2Mend)"
+         d="m 225.87299,628.18526 0,-238.75928"
+         id="path5140"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="C:\Documents and Settings\Soundar\My Documents\Visual Studio 2008\Projects\ControlVUE\trunk\code\Figures\graphs\y1_axis2.png"
+         inkscape:export-xdpi="81.738464"
+         inkscape:export-ydpi="81.738464" />
+      <path
+         inkscape:export-ydpi="81.738464"
+         inkscape:export-xdpi="81.738464"
+         inkscape:export-filename="C:\Documents and Settings\Soundar\My Documents\Visual Studio 2008\Projects\ControlVUE\trunk\code\Figures\graphs\y1_axis2.png"
+         inkscape:connector-curvature="0"
+         id="path5142"
+         d="m 623.25453,632.17904 0,-238.75928"
+         style="fill:none;stroke:#000000;stroke-width:7.97487545;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow2Mend)" />
+      <text
+         transform="scale(1.016944,0.98333831)"
+         sodipodi:linespacing="125%"
+         id="text5144"
+         y="705.31567"
+         x="330.88052"
+         style="font-size:86.30859375px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Comic Sans MS;-inkscape-font-specification:Comic Sans MS"
+         xml:space="preserve"><tspan
+           y="705.31567"
+           x="330.88052"
+           id="tspan5146"
+           sodipodi:role="line">x</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:56.29743576px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Comic Sans MS;-inkscape-font-specification:Comic Sans MS"
+         x="661.20844"
+         y="581.27081"
+         id="text5148"
+         sodipodi:linespacing="125%"
+         transform="scale(1.016944,0.98333831)"><tspan
+           y="581.27081"
+           x="661.20844"
+           id="tspan5158"
+           sodipodi:role="line">2</tspan></text>
+      <text
+         transform="scale(1.016944,0.98333831)"
+         sodipodi:linespacing="125%"
+         id="text5160"
+         y="534.73444"
+         x="144.33656"
+         style="font-size:86.30859375px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Comic Sans MS;-inkscape-font-specification:Comic Sans MS"
+         xml:space="preserve"><tspan
+           sodipodi:role="line"
+           id="tspan5162"
+           x="144.33656"
+           y="534.73444">y</tspan></text>
+      <text
+         transform="scale(1.016944,0.98333831)"
+         sodipodi:linespacing="125%"
+         id="text5164"
+         y="581.27081"
+         x="176.19414"
+         style="font-size:56.29743576px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Comic Sans MS;-inkscape-font-specification:Comic Sans MS"
+         xml:space="preserve"><tspan
+           y="581.27081"
+           x="176.19414"
+           id="tspan5168"
+           sodipodi:role="line">1</tspan></text>
+    </g>
+  </g>
+</svg>
