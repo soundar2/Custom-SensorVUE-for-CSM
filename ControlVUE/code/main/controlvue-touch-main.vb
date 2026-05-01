@@ -14,7 +14,6 @@ Module ModuleLvMain
     Public _gGraphOptionsCollection As GraphOptionsCollection
     Public _gOkToGraph() As Boolean 'each graph needs its own flag on when to graph
     Public _gFrmMain As IMainForm 'we need this flag for every window to access the MDI parent
-    Public _gUseWifi As Boolean = False
     Public _gMultiPoint As Boolean = False
 
     Public Sub Main()
@@ -38,9 +37,9 @@ Module ModuleLvMain
         _gGraphOptionsCollection = GraphOptionsCollection.Instance
 
 
-        Dim frmp As New frmPartDetails
-        frmp.ShowDialog()
-        Return
+        'Dim frmp As New frmPartDetails
+        'frmp.ShowDialog()
+        'Return
 
         Dim agr = New com.loadstar.disclaimer.LicenseAgreement(My.Application.Info.ProductName, True)
         If Not agr.AgreeToLicense() Then
@@ -75,7 +74,6 @@ Module ModuleLvMain
         '    _gMultiPoint = False
         'End If
 
-        _gUseWifi = False
         _gMultiPoint = False
 
         '

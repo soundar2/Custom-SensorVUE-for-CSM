@@ -117,13 +117,10 @@ Public Class frmDetectSensors
         Static lock As New Object
         SyncLock lock
             CheckForIllegalCrossThreadCalls = False
-            If _gUseWifi Then
-                lblProgress.Text = String.Format("Scanning {0}:{1} ...", portName, baudrate.ToString)
-            Else
-                lblProgress.Text = String.Format("Scanning {0}, Baud: {1}...", portName, baudrate.ToString)
-            End If
 
-            lblProgress.Refresh()
+            lblProgress.Text = String.Format("Scanning {0}, Baud: {1}...", portName, baudrate.ToString)
+
+                lblProgress.Refresh()
             Thread.Sleep(100)
             CheckForIllegalCrossThreadCalls = True
         End SyncLock

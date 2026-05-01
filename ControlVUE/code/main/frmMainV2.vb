@@ -32,7 +32,6 @@ Public Class frmMainV2
     Private Sub frmMainV2_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Hourglass.Show()
         Me.Text = clsGlobals.GetProductNameAndVersion
-        lblWifiLogo.Visible = _gUseWifi
         mnuAboutLoadVUE.Text = "&About " & My.Application.Info.ProductName
         '
         ToolStripManager.VisualStylesEnabled = True

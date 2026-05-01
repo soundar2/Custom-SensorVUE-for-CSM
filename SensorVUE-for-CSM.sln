@@ -17,7 +17,7 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ImportLogFiles", "ImportLog
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RelayInterface", "RelayInterface\RelayInterface.vbproj", "{A2077BD4-2EC8-462B-AC4D-457024061B36}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ControlVUE-Touch", "ControlVUE\ControlVUE-Touch.vbproj", "{63BC3F16-6CE6-47B0-A31E-4A9AC574B912}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SensorVUE-for-CSM", "ControlVUE\SensorVUE-for-CSM.vbproj", "{63BC3F16-6CE6-47B0-A31E-4A9AC574B912}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

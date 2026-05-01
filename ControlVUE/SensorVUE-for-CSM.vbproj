@@ -505,10 +505,6 @@
     <Compile Include="code\main\frmMainV2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="code\onetomany\FcmXbeeSensor.vb" />
-    <Compile Include="code\onetomany\XbeeApiDongle.vb" />
-    <Compile Include="code\onetomany\XbeeApiSensor.vb" />
-    <Compile Include="code\onetomany\XBeeChecksum.vb" />
     <Compile Include="code\class\relays\scripting\RelayScripting.vb" />
     <Compile Include="code\usercontrols\ctlPeakLow.Designer.vb">
       <DependentUpon>ctlPeakLow.vb</DependentUpon>
@@ -790,7 +786,6 @@
     <None Include="data\defaultwindowlayout.ini">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <Content Include="guids.txt" />
     <None Include="Resources\start_round.wav" />
     <None Include="Resources\boxing_bell.wav" />
     <None Include="packages.config" />
@@ -821,7 +816,6 @@
     <None Include="code\Figures\graphs\graph_disabled.png" />
     <None Include="code\Figures\frontend\sensorvue_frontend.png" />
     <None Include="code\Figures\frontend\controlvue_frontend.png" />
-    <None Include="code\Figures\wifi\wifilogo.png" />
     <Content Include="code\Figures\lv100-background.jpg" />
     <Content Include="data\alarms\default.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -939,6 +933,7 @@
   <ItemGroup>
     <Folder Include="code\class\torque\" />
     <Folder Include="code\debug\" />
+    <Folder Include="code\onetomany\" />
     <Folder Include="externals\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />

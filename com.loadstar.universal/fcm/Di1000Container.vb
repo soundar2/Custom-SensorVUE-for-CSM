@@ -10,14 +10,8 @@ Public Class Di1000Container
     Public Sub New(con As IConnection)
         _connection = con
         _connection.LineTerminator = vbLf
-        If TypeOf _connection Is XbeeApiConnection Then
-            AddHandler CType(_connection, XbeeApiConnection).RelayDongleMessage, AddressOf DongleErrorMessage
-            SyncLock XbeeGlobals.DongleLock
-                ReadSettings()
-            End SyncLock
-        Else
-            ReadSettings()
-        End If
+
+        ReadSettings()
     End Sub
     Private Sub ReadSettings()
         If _connection.TryOpen() Then
@@ -43,44 +37,29 @@ Public Class Di1000Container
     Public Function StartReading() As Boolean Implements ISensorContainer.StartReading
         _connection.StreamingByteCount = 13
         _connection.TryOpen()
-        If TypeOf _connection Is XbeeApiConnection Then
-            _timerPoll.Enabled = True
-            PollAll()
-        Else
-            _connection.XmitStreamingCommand("WC" & vbCr)
-        End If
-        Return True
+
+        _connection.XmitStreamingCommand("WC" & vbCr)
+            Return True
     End Function
 
     Public Function StopReading() As Boolean Implements ISensorContainer.StopReading
         _timerPoll.Enabled = False
-        If TypeOf _connection Is XbeeApiConnection Then
-            _connection.Flush()
-            _connection.TryClose()
-        Else
-            Dim cmd = New SensorCommand
+
+        Dim cmd = New SensorCommand
             cmd.commandText = vbCr
             cmd.responseType = SensorCommand.Enum_ResponseType.oneline
             _connection.XmitCommand(cmd)
             _connection.XmitCommand(cmd)
             _connection.StopReading()
             _connection.TryClose()
-        End If
 
-        Return True
+            Return True
     End Function
 
     Public Function Tare(sensorIndex As UShort) As Boolean Implements ISensorContainer.Tare
-        If TypeOf _connection Is XbeeApiConnection Then
-            SyncLock XbeeGlobals.DongleLock
-                _isTaring = True
-                ReallyTare()
-                _isTaring = False
-            End SyncLock
-        Else
-            ReallyTare()
-        End If
-        Return True
+
+        ReallyTare()
+            Return True
     End Function
     Private Function ReallyTare() As Boolean
         _connection.TryOpen()
@@ -122,14 +101,8 @@ Public Class Di1000Container
         End Get
     End Property
     Public Function PollAll() As Boolean Implements ISensorContainer.PollAll
-        If TypeOf _connection Is XbeeApiConnection Then
-            SyncLock XbeeGlobals.DongleLock
-                If Not _timerPoll.Enabled Then Return True
-                ReallyPoll()
-            End SyncLock
-        Else
-            ReallyPoll()
-        End If
+
+        ReallyPoll()
         Return True
     End Function
     Private Sub ReallyPoll()

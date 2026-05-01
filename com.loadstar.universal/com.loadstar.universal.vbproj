@@ -76,8 +76,6 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="connections\XbeeApiDongle.vb" />
-    <Compile Include="connections\XBeeChecksum.vb" />
     <Compile Include="Container.vb" />
     <Compile Include="derived\AveragingSensor.vb" />
     <Compile Include="derived\ExpWMA.vb" />
@@ -98,8 +96,6 @@
     <Compile Include="iLoad\iLoad.vb" />
     <Compile Include="iLoad\iLoadContainer.vb" />
     <Compile Include="MessageLog.vb" />
-    <Compile Include="sc1200\SC1200Container.vb" />
-    <Compile Include="sc1200\SC1200Sensor.vb" />
     <Compile Include="Sensor.vb" />
     <Compile Include="fcm\di1000.vb" />
     <Compile Include="connections\IConnection.vb" />
@@ -123,10 +119,7 @@
     </Compile>
     <Compile Include="SensorCommand.vb" />
     <Compile Include="connections\SerialConnection.vb" />
-    <Compile Include="connections\WiFiConnection.vb" />
-    <Compile Include="connections\XbeeApiConnection.vb" />
     <Compile Include="Units.vb" />
-    <Compile Include="XbeeGlobals.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

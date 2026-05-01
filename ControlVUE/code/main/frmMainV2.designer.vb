@@ -662,15 +662,7 @@ Partial Class frmMainV2
         Me.StatusStrip1.Size = New System.Drawing.Size(1284, 25)
         Me.StatusStrip1.TabIndex = 10
         Me.StatusStrip1.Text = "StatusStrip1"
-        '
-        'lblWifiLogo
-        '
-        Me.lblWifiLogo.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Right
-        Me.lblWifiLogo.BorderStyle = System.Windows.Forms.Border3DStyle.Etched
-        Me.lblWifiLogo.Image = Global.LoadVUE.My.Resources.Resources.wifilogo
-        Me.lblWifiLogo.Name = "lblWifiLogo"
-        Me.lblWifiLogo.Padding = New System.Windows.Forms.Padding(0, 0, 5, 0)
-        Me.lblWifiLogo.Size = New System.Drawing.Size(25, 20)
+
         '
         'lblSensorList
         '
